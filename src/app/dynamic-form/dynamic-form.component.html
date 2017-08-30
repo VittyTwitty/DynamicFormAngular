@@ -5,11 +5,10 @@
       <app-dynamic-items [question]="question" [form]="form"></app-dynamic-items>
     </div>
 
-    <div class="form-row">
+    <!-- <div class="form-row">
       <button type="submit" [disabled]="!form.valid">Сохранить</button>
-    </div>
+    </div> -->
   </form>
-
   <div *ngIf="payLoad" class="form-row">
     <strong>Saved the following values</strong><br>{{payLoad}}
   </div>

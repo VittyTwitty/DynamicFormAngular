@@ -3,6 +3,7 @@ import { QuestionStructure } from "../models/question-structure";
 import { SelectQuestion } from "../models/select-question";
 import { TextboxQuestion } from "../models/textbox-question";
 import { mockData } from "../data/data";
+import { ButtonQuestion } from "../models/button-question";
 
 @Injectable()
 export class QuestionService {
@@ -13,13 +14,17 @@ export class QuestionService {
         let textbox: QuestionStructure<string>;
         textbox = new TextboxQuestion(data);
         newArr.push(textbox);
-        console.log(textbox);
+        console.log(data)
       }
       else if (data.type2 === 'select') {
         let selectbox: QuestionStructure<string>;
         selectbox = new SelectQuestion(data);
         newArr.push(selectbox);
-        console.log(selectbox)
+      }
+      else if (data.type2 === 'button') {
+        let buttonbox: QuestionStructure<string>;
+        buttonbox = new ButtonQuestion(data);
+        newArr.push(buttonbox);
       }
       console.log(newArr)
       return newArr;

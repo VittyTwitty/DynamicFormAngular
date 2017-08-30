@@ -21,6 +21,23 @@ export const mockData = [
         type2: 'input'
     },
     {
+        key: 'emailAdd',
+        label: 'sdsdsdsd',
+        type: 'email',
+        disabled: true,
+        order: 6,
+        type2: 'input'
+    },
+    {
+        key: 'buttonSubmit',
+        label: 'sdsdsdsd',
+        value: 'Отправить',
+        type: 'submit',
+        disabled: true,
+        order: 8,
+        type2: 'button'
+    },
+    {
         key: 'brave',
         label: 'Bravery Rating',
         options: [
@@ -28,6 +45,18 @@ export const mockData = [
             { key: 'great', value: 'Great' },
             { key: 'good', value: 'Good' },
             { key: 'unproven', value: 'Unproven' }
+        ],
+        order: 3,
+        type2: 'select'
+    },
+    {
+        key: 'brave',
+        label: '111111111111111111111111111111111111111',
+        options: [
+            { key: 'solid', value: 'Solid' },
+            { key: 'great', value: 'Great' },
+            { key: 'good', value: 'Good' },
+            { key: 'unproven', value: 'Andrey loh' }
         ],
         order: 3,
         type2: 'select'
